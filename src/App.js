@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Form from "./components/TodoList"
+import TodoList from './components/TodoList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
+        <h1>ToDo List</h1>
+        <form>
+            <input type="text" className="todo-input"/>
+            <button className="todo-button" type="submit">
+                <i className="fas fa-plus-square"></i>
+            </button>
+        </form>
       </header>
+      <TodoList/>
+    
+      
     </div>
   );
 }
