@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
-import Form from "./components/TodoList"
 import TodoList from './components/TodoList';
+import Form  from "./components/Form"
 
 function App() {
+  const [inputText, setInputText] = useState("")
+  const [todos, setTodos] = useState([])
+
   return (
     <div className="App">
       <header className="header">
         <h1>ToDo List</h1>
-        <form>
-            <input type="text" className="todo-input"/>
-            <button className="todo-button" type="submit">
-                <i className="fas fa-plus-square"></i>
-            </button>
-        </form>
+        <Form todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}/>
       </header>
-      <TodoList/>
-    
-      
+      <TodoList todos={todos}/>
     </div>
   );
 }
