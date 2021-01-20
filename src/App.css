@@ -4,6 +4,12 @@
 
 .header {
   background-image: url("Images/bg-desktop-dark.jpg");
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+}
+.todo-input{
+  padding-bottom: 2px;
 }
 
 
