@@ -14,7 +14,7 @@ const TodoList = ({todos, setTodos}) => {
                     key={todo.id}/>
                 ))}
             </ul>
-            {/* <Todo/> */}
+            
         </div>
     )
 }

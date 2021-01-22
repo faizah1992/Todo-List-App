@@ -1,15 +1,51 @@
-.App {
-  text-align: center;
-}
-
 .header {
+  text-align: center;
   background-image: url("Images/bg-desktop-dark.jpg");
-  padding-top: 2px;
-  padding-bottom: 2px;
-  color: white;
+  padding-top: 20px;
+  background-repeat: no-repeat;
 }
+
+body {
+  background-color: rgb(24, 25, 37);
+  border: 2px solid blue;
+}
+ 
 .todo-input{
-  padding-bottom: 2px;
+  max-width: 50%;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(37,39,60);
+  color: lightgray;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  border: pink solid 2px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.completed {
+ text-decoration: line-through;
+ opacity: 0.5; 
+}
+.todo-item{
+  flex: 1;
 }
 
-
+.todo {
+  max-width: 50%;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(37,39,60);
+  color: lightgray;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  border: pink solid 2px;
+  display: flex;
+  justify-content: center;
+}
